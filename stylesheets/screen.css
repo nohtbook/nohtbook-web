@@ -10,10 +10,13 @@ body > div:first-child {
 }
 
 h1 {
-  color: #57B625;
   font-size: 48px;
   font-weight: normal;
   margin: 1em 0 0.8em;
+}
+
+h1, h1 > a {
+  color: #57B625;
 }
 
 h2 {
