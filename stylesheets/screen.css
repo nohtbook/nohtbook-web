@@ -1,12 +1,13 @@
 body {
   color: #262626;
   font-family: Helvetica Neue;
-  margin: 0;
-  text-align: center;
+  margin: 0 20px;
+  /*text-align: center;*/
 }
 
-body > div:first-child {
+body > div {
   margin: 0 auto;
+  max-width: 720px;
 }
 
 h1 {
@@ -26,7 +27,18 @@ h2 {
 
 p {
   font-size: 15px;
-  margin-top: 60px;
+}
+
+li {
+  font-size: 15px;
+}
+
+#contact > div > h1 {
+  margin-bottom: 60px;
+}
+
+#home > div > h2 {
+  margin: 60px 0;
 }
 
 a {
@@ -37,8 +49,34 @@ a:hover {
   text-decoration: underline;
 }
 
+#faq ul {
+  padding-left: 24px;
+}
+
+#faq li + li {
+  margin-top: 7px;
+}
+
+#faq dt {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+#faq dd {
+  color: #555;
+  margin: 0;
+}
+
+#faq dd:first-of-type {
+  margin-bottom: 28px;
+}
+
 footer {
-  margin-bottom: 3em;
+  margin: 60px 0 3em;
+}
+
+h1, h2, footer, #home, #contact {
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -50,13 +88,21 @@ footer {
     font-size: 42px;
   }
 
-  p {
+  #contact p, footer > p {
     font-size: 24px;
   }
 }
 
 @media only screen and (min-height: 600px) {
-  p {
+  #home > div > h2 {
+    margin-bottom: 160px;
+  }
+
+  #contact > div > h1 {
+    margin-bottom: 160px;
+  }
+
+  #home footer, #contact footer {
     margin-top: 160px;
   }
 }
