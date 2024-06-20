@@ -1,0 +1,27 @@
+body {
+  color: #262626;
+  font-family: system-ui;
+  line-height: 1.5;
+}
+
+body > div {
+  margin-inline: auto;
+  max-width: 32em;
+}
+
+footer {
+  margin-block: 1.875em;
+}
+
+h1#logo {
+  color: #57B625;
+  font-weight: normal;
+}
+
+h1, footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
